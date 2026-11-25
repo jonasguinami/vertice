@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Anuncie sua marca em nossa rede de mídia DOOH. Conheça as possibilidades de veiculação em telas digitais e solicite uma proposta de campanha.">
+  <meta name="theme-color" content="#0a192f">
+  <title>Vértice | Mídia DOOH e publicidade digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Biblioteca local de símbolos SVG: não utiliza fontes de ícones. -->
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-logo" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="3"/><path d="M8 6h8M8 9h8M10 18h4"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-gallery" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m3 17 5-5 4 4 4-5 5 6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l1.8-4A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 11h.01M12 11h.01M16 11h.01" stroke-width="2.8"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.8 14.4A9 9 0 0 1 9.6 3.2 9 9 0 1 0 20.8 14.4Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 .8-9.9 6 6 0 0 1 11.3 2.4A4 4 0 0 1 18 18H7Z"/><path d="M12 13v8m-3-3 3 3 3-3"/></symbol>
+    <symbol id="i-slim" viewBox="0 0 24 24"><rect x="8" y="2.5" width="8" height="19" rx="2"/><path d="M4 6v12M20 6v12M10 18.5h4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-9 0-15 3-15 10a6 6 0 0 0 6 6c7 0 10-6 9-16Z"/><path d="M4 21 15 10"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 8 6 4-6 4Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M4 8h16l1 13H3L4 8Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-health" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 7v10M7 12h10"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18M8 15h2m4 0h2"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 10 5 4h14l2 6M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M5 13v8h14v-8M9 21v-6h6v6"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.7 11.7a8.7 8.7 0 0 1-13 7.6L3 20.6l1.3-4.5a8.7 8.7 0 1 1 16.4-4.4Z"/><path d="M9 8.2c.4-.4.8-.3 1 .2l.8 1.7c.1.3 0 .5-.3.8l-.5.5c.8 1.5 1.9 2.5 3.4 3.2l.5-.6c.2-.3.5-.4.8-.2l1.7.8c.4.2.5.5.3.9-.4.9-1.4 1.2-2.4 1-3.4-.8-6.2-3.7-6.8-6.5-.2-.8.4-1.5 1.5-1.8Z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m3 17 5-4 4 3 4-5 5 6"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="header-wrap"><div class="site-header shell">
+    <!-- SIGNAGE é uma marca demonstrativa. Substitua pelo nome real. -->
+    <a class="brand" href="#inicio" aria-label="Signage, início"><span class="brand-mark"><svg aria-hidden="true" class="icon"><use href="#i-logo"/></svg></span><span>VÉRTICE<span class="brand-dot">.</span><small>MÍDIA DOOH</small></span></a>
+    <span class="header-note"><span class="status-dot"></span> Publicidade digital em pontos estratégicos</span>
+    <div class="header-actions">
+      <button type="button" class="theme-toggle top-theme" id="theme-toggle" aria-label="Alternar tema"><svg aria-hidden="true" class="icon theme-sun"><use href="#i-sun"/></svg><svg aria-hidden="true" class="icon theme-moon"><use href="#i-moon"/></svg></button>
+      <button type="button" class="button button-primary header-cta" data-quote>Anunciar <svg aria-hidden="true" class="icon"><use href="#i-up-right"/></svg></button>
+    </div>
+  </div></header>
+  <main id="main">
+    <section id="inicio" class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="status-dot"></span> MÍDIA DOOH / PUBLICIDADE DIGITAL</span>
+        <h1 id="hero-title">Sua marca.<br>Onde seu cliente <span class="accent-text">passa.</span></h1>
+        <p class="hero-description">Anuncie em nossa rede de totens digitais instalados em pontos estratégicos. Leve suas ofertas e campanhas ao público no mundo real, com inserções em vídeo ou imagem.</p>
+        <div class="hero-actions"><button type="button" class="button button-primary" data-quote>Quero anunciar <svg aria-hidden="true" class="icon"><use href="#i-arrow"/></svg></button><a class="button button-outline" href="#vantagens">Conhecer a mídia</a></div>
+        <div class="hero-points"><span><svg aria-hidden="true" class="icon"><use href="#i-check"/></svg> Planos de veiculação</span><span><svg aria-hidden="true" class="icon"><use href="#i-check"/></svg> Campanhas sob medida</span></div>
+      </div>
+      <figure class="hero-media media-slot">
+        <!-- Adicione src="images/hero.webp" ou uma URL real. O fallback desaparece automaticamente quando a imagem carregar. -->
+        <img class="media-image" data-src="" alt="Publicidade digital exibida em um totem instalado em ambiente comercial" decoding="async" fetchpriority="high">
+        <div class="hero-art media-fallback" aria-label="Ilustração conceitual de uma inserção publicitária em tela digital" role="img">
+          <div class="art-grid"></div><div class="art-halo"></div>
+          <div class="art-caption"><span class="art-line"></span> MÍDIA DOOH<br><strong>Publicidade em movimento.</strong></div>
+          <div class="totem-shadow"></div><div class="totem"><div class="totem-screen"><span class="screen-kicker">SUA MARCA / 01</span><div class="screen-orb"></div><div class="screen-text">Seja<br>visto<span>.</span></div><span class="screen-bottom">PUBLICIDADE DIGITAL</span></div><span class="totem-led"></span></div><div class="totem-base"></div>
+          <div class="art-index">01 / CONCEITO</div>
+        </div>
+        <figcaption class="media-caption"><span><svg aria-hidden="true" class="icon"><use href="#i-image"/></svg> Espaço de mídia principal</span><span>Imagem ilustrativa</span></figcaption>
+      </figure>
+    </section>
+    <section class="value-strip" aria-label="Diferenciais da solução"><div class="shell value-inner"><div><span>01</span> Presença no mundo real</div><div><span>02</span> Anúncios em vídeo e imagem</div><div><span>03</span> Planos flexíveis</div></div></section>
+    <section id="vantagens" class="section shell" aria-labelledby="features-title">
+      <div class="section-heading"><div><span class="eyebrow">01 / VANTAGENS DA MÍDIA</span><h2 id="features-title">Mais presença.<br>Mais oportunidades.</h2></div><p>Alcance pessoas em sua rotina e escolha uma estratégia de veiculação alinhada ao objetivo da sua marca.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon"><svg aria-hidden="true" class="icon"><use href="#i-eye"/></svg></span><span class="card-number">01</span><h3>Visibilidade estratégica</h3><p>Exponha sua marca em ambientes de circulação e permanência, com mensagens que fazem parte da jornada do público.</p></article>
+        <article class="feature-card"><span class="feature-icon"><svg aria-hidden="true" class="icon"><use href="#i-play"/></svg></span><span class="card-number">02</span><h3>Inserções dinâmicas</h3><p>Divulgue ofertas, lançamentos e campanhas institucionais em vídeo ou imagem, conforme os formatos disponíveis.</p></article>
+        <article class="feature-card"><span class="feature-icon"><svg aria-hidden="true" class="icon"><use href="#i-pin"/></svg></span><span class="card-number">03</span><h3>Segmentação por local</h3><p>Escolha pontos de exibição compatíveis com seu público e com a região que deseja atingir, conforme disponibilidade.</p></article>
+        <article class="feature-card"><span class="feature-icon"><svg aria-hidden="true" class="icon"><use href="#i-calendar"/></svg></span><span class="card-number">04</span><h3>Planos flexíveis</h3><p>Planeje ações pontuais ou presença contínua, com períodos de veiculação e condições ajustados à sua campanha.</p></article>
+      </div>
+      <div class="model-panel"><div><span class="eyebrow">VEICULAÇÃO SOB MEDIDA</span><h3>Sua campanha, sua estratégia.</h3><p>Você contrata espaço publicitário, não equipamentos. Nossa proposta define pontos disponíveis, período, frequência de inserções, formatos de mídia e condições de veiculação.</p></div><button class="button button-outline" type="button" data-quote>Consultar planos <svg aria-hidden="true" class="icon"><use href="#i-arrow"/></svg></button></div>
+    </section>
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title"><div class="shell">
+      <div class="section-heading"><div><span class="eyebrow">02 / PONTOS DE MÍDIA</span><h2 id="gallery-title">Onde sua marca<br>pode ganhar espaço.</h2></div><p>Explore os tipos de ambiente em que sua campanha pode aparecer. As categorias são ilustrativas; confirme os pontos ativos e disponíveis na proposta.</p></div>
+      <div class="gallery-grid">
+        <!-- Em cada imagem, preencha src ou data-src com o arquivo real. -->
+        <figure class="gallery-card"><div class="gallery-media media-slot media-shopping"><img class="media-image" src="shop.png" data-src="shop.png" alt="Totem digital em shopping center" loading="lazy" decoding="async"><div class="media-fallback gallery-art" aria-hidden="true"><svg aria-hidden="true" class="icon"><use href="#i-bag"/></svg><span>INSERIR FOTO / 01</span></div><span class="gallery-tag">Shopping</span></div><figcaption><div><h3>Shopping centers</h3><p>Visibilidade junto a consumidores durante sua jornada de compras.</p></div><svg aria-hidden="true" class="icon"><use href="#i-up-right"/></svg></figcaption></figure>
+        <figure class="gallery-card"><div class="gallery-media media-slot media-clinic"><img class="media-image" src="saude.png" data-src="saude.png" alt="Totem digital na recepção de uma clínica" loading="lazy" decoding="async"><div class="media-fallback gallery-art" aria-hidden="true"><svg aria-hidden="true" class="icon"><use href="#i-health"/></svg><span>INSERIR FOTO / 02</span></div><span class="gallery-tag">Saúde</span></div><figcaption><div><h3>Clínicas e recepções</h3><p>Exposição de campanhas em ambientes de espera e permanência.</p></div><svg aria-hidden="true" class="icon"><use href="#i-up-right"/></svg></figcaption></figure>
+        <figure class="gallery-card"><div class="gallery-media media-slot media-event"><img class="media-image" src="evento.png" data-src="evento.png" alt="Totem digital em feira de negócios" loading="lazy" decoding="async"><div class="media-fallback gallery-art" aria-hidden="true"><svg aria-hidden="true" class="icon"><use href="#i-calendar"/></svg><span>INSERIR FOTO / 03</span></div><span class="gallery-tag">Eventos</span></div><figcaption><div><h3>Feiras e eventos</h3><p>Presença de marca em ações e eventos com públicos específicos.</p></div><svg aria-hidden="true" class="icon"><use href="#i-up-right"/></svg></figcaption></figure>
+        <figure class="gallery-card"><div class="gallery-media media-slot media-retail"><img class="media-image" src="varejo.png" data-src="varejo.png" alt="Totem digital em uma loja de varejo" loading="lazy" decoding="async"><div class="media-fallback gallery-art" aria-hidden="true"><svg aria-hidden="true" class="icon"><use href="#i-store"/></svg><span>INSERIR FOTO / 04</span></div><span class="gallery-tag">Varejo</span></div><figcaption><div><h3>Lojas e pontos de venda</h3><p>Divulgação de ofertas e serviços em contextos de consumo local.</p></div><svg aria-hidden="true" class="icon"><use href="#i-up-right"/></svg></figcaption></figure>
+      </div>
+    </div></section>
+    <section id="contato" class="section shell" aria-labelledby="contact-title">
+      <div class="conversion"><div class="conversion-decoration" aria-hidden="true"></div><span class="eyebrow">03 / VAMOS CONVERSAR</span><h2 id="contact-title">Coloque sua marca<br>em evidência.</h2><p>Conte seus objetivos e receba uma proposta de mídia DOOH alinhada à sua campanha. Escolha o período e os pontos disponíveis para anunciar.</p><button type="button" class="button button-white" data-quote><svg aria-hidden="true" class="icon"><use href="#i-whatsapp"/></svg> Quero anunciar minha marca <svg aria-hidden="true" class="icon"><use href="#i-arrow"/></svg></button><span class="conversion-note">Atendimento via WhatsApp · Solicitação sem compromisso</span></div>
+    </section>
+  </main>
+  <footer class="site-footer shell"><a class="brand" href="#inicio" aria-label="Signage, início"><span class="brand-mark"><svg aria-hidden="true" class="icon"><use href="#i-logo"/></svg></span><span>VÉRTICE<span class="brand-dot">.</span><small>MÍDIA DOOH</small></span></a><p>© <span id="year"></span> Signage. Todos os direitos reservados.</p><div class="legal-links"><button type="button" data-legal="terms">Termos de Uso</button><button type="button" data-legal="privacy">Política de Privacidade</button></div></footer>
+  <nav class="dock" aria-label="Navegação principal">
+    <a class="dock-item is-active" href="#inicio" aria-current="location"><svg aria-hidden="true" class="icon"><use href="#i-home"/></svg><span>Início</span></a>
+    <a class="dock-item" href="#vantagens"><svg aria-hidden="true" class="icon"><use href="#i-grid"/></svg><span>Vantagens</span></a>
+    <a class="dock-item" href="#galeria"><svg aria-hidden="true" class="icon"><use href="#i-pin"/></svg><span>Pontos</span></a>
+    <a class="dock-item" href="#contato"><svg aria-hidden="true" class="icon"><use href="#i-chat"/></svg><span>Contato</span></a>
+  </nav>
+  <dialog id="quote-dialog" class="modal" aria-labelledby="quote-title"><div class="modal-content"><header class="modal-header"><div><span class="eyebrow">PROPOSTA DE MÍDIA DOOH</span><h2 id="quote-title">Planeje sua campanha</h2></div><button type="button" class="close-button" data-close aria-label="Fechar orçamento"><svg aria-hidden="true" class="icon"><use href="#i-close"/></svg></button></header><p class="modal-intro">Informe os detalhes da sua campanha para solicitar uma proposta de veiculação pelo WhatsApp.</p>
+    <form id="quote-form">
+      <div class="form-field"><label for="full-name">Nome do responsável</label><input id="full-name" name="name" autocomplete="name" required minlength="3" maxlength="100" placeholder="Seu nome completo"></div>
+      <div class="form-field"><label for="company">Empresa / marca</label><input id="company" name="company" autocomplete="organization" required minlength="2" maxlength="120" placeholder="Nome da empresa ou marca"></div>
+      <div class="form-field"><label for="segment">Segmento de atuação</label><input id="segment" name="segment" required minlength="2" maxlength="120" placeholder="Ex.: Gastronomia, varejo, serviços"></div>
+      <div class="form-grid">
+        <div class="form-field"><label for="campaign">Objetivo da campanha</label><select id="campaign" name="campaign" required><option value="">Selecione</option><option>Divulgação de marca</option><option>Promoção relâmpago</option><option>Lançamento</option><option>Tráfego local</option><option>Outro objetivo</option></select></div>
+        <div class="form-field"><label for="duration">Tempo de veiculação</label><select id="duration" name="duration" required><option value="">Selecione</option><option>15 dias</option><option>1 mês</option><option>3 meses</option><option>6 meses</option><option>Plano contínuo</option></select></div>
+      </div>
+      <fieldset class="form-field"><legend>Já possui arte ou vídeo para exibição?</legend><div class="radio-options"><label><input type="radio" name="creative" value="Sim, já possuo" required><span>Sim, já possuo</span></label><label><input type="radio" name="creative" value="Preciso de criação" required><span>Preciso de criação</span></label></div></fieldset>
+      <p class="form-note">Ao continuar, seus dados serão incluídos na mensagem do WhatsApp. Você poderá revisá-la antes de enviar. Consulte nossa <button type="button" data-legal="privacy">Política de Privacidade</button>.</p>
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+      <a id="whatsapp-fallback" class="fallback-link" target="_blank" rel="noopener noreferrer" hidden>Abrir WhatsApp manualmente</a>
+      <button class="button button-primary submit-button" type="submit"><svg aria-hidden="true" class="icon"><use href="#i-whatsapp"/></svg> Continuar no WhatsApp <svg aria-hidden="true" class="icon"><use href="#i-arrow"/></svg></button>
+    </form></div></dialog>
+  <dialog id="legal-dialog" class="modal legal-modal" aria-labelledby="legal-title"><div class="modal-content"><header class="modal-header"><div><span class="eyebrow">INFORMAÇÕES LEGAIS</span><h2 id="legal-title"></h2></div><button class="close-button" type="button" data-close aria-label="Fechar documento"><svg aria-hidden="true" class="icon"><use href="#i-close"/></svg></button></header><div id="legal-body" class="legal-body"></div><button type="button" class="button button-outline legal-done" data-close>Fechar</button></div></dialog>
+  <!-- Textos-base demonstrativos: revise conforme os dados e práticas reais antes de publicar. -->
+  <template id="terms-template">
+    <p class="legal-notice">Minuta para revisão antes da publicação. Complete os dados da prestadora e as condições reais do serviço.</p>
+    <h3>1. Objeto do serviço</h3><p>O site apresenta serviços de veiculação publicitária em mídia digital out of home (DOOH), mediante inserções em telas da rede. A contratação refere-se a espaço e tempo de exibição, não à aquisição ou locação de equipamentos.</p>
+    <h3>2. Proposta e contratação</h3><p>Valores, pontos de mídia, período, frequência, duração das inserções, formatos aceitos, prazos de entrega das peças e condições de pagamento dependem da proposta e do aceite das partes. A solicitação de orçamento não reserva inventário nem constitui contratação.</p>
+    <h3>3. Conteúdo publicitário</h3><p>O anunciante deve fornecer materiais lícitos, informações verídicas e autorizações de uso de marcas, imagens e demais conteúdos. A aprovação e a eventual criação ou adaptação das peças serão tratadas na proposta. Materiais incompatíveis com a legislação ou com as condições de veiculação poderão ser recusados.</p>
+    <h3>4. Exibição e disponibilidade</h3><p>Os ambientes ilustrados são referenciais. Pontos ativos, programação, alterações, indisponibilidades, compensações e cancelamento serão definidos nas condições contratadas, observados os direitos aplicáveis. Não há garantia de vendas, conversões ou audiência individual.</p>
+    <h3>5. Atendimento</h3><p>Solicitações e esclarecimentos sobre campanhas podem ser encaminhados ao canal comercial informado no site, quando configurado.</p>
+  </template>
+  <template id="privacy-template">
+    <p class="legal-notice">Minuta para revisão. Antes de publicar, identifique o controlador, canal de privacidade, bases legais, destinatários e critérios de retenção conforme as práticas reais.</p>
+    <h3>1. Dados e finalidade</h3><p>O formulário solicita nome do responsável, empresa ou marca, segmento, objetivo da campanha, período desejado e disponibilidade de material publicitário. As informações são utilizadas para preparar a solicitação de proposta, responder ao contato e avaliar a viabilidade da veiculação.</p>
+    <h3>2. Processamento e WhatsApp</h3><p>Nesta versão, os dados são processados no navegador e incluídos na URL do WhatsApp quando você continua. Não são enviados a um backend próprio pelo formulário. Ao abrir o WhatsApp, as informações da solicitação são encaminhadas ao serviço de terceiro, sujeito às suas próprias regras. Revise a mensagem antes de enviá-la.</p>
+    <h3>3. Tratamento após o contato</h3><p>O tratamento das mensagens recebidas, eventual compartilhamento com prestadores, medidas de segurança, bases legais e prazos de retenção devem refletir as práticas efetivas da empresa e ser informados pelo controlador antes da publicação.</p>
+    <h3>4. Preferências e serviços externos</h3><p>A preferência de tema é armazenada no localStorage, quando disponível. O carregamento de fontes pelo Google Fonts pode transmitir informações técnicas da conexão. Esta versão não inclui ferramentas de análise ou rastreamento.</p>
+    <h3>5. Direitos do titular</h3><p>Os direitos relativos à proteção de dados podem ser exercidos junto ao controlador, conforme a legislação aplicável. O canal de privacidade deverá ser informado pela empresa antes da publicação.</p>
+  </template>
+</body>
+</html>
