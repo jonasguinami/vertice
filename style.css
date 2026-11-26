@@ -843,7 +843,8 @@ img {
   border-top:1px solid var(--line);
   display:flex;
   flex-direction:column;
-  align-items:flex-start;
+  align-items:center;
+  text-align:center;
   gap:20px;
   padding-block:24px calc(var(--dock-space) + env(safe-area-inset-bottom,0px));
   color:var(--muted);
@@ -856,6 +857,7 @@ img {
 
 .legal-links {
   display:flex;
+  justify-content:center;
   flex-wrap:wrap;
   gap:18px
 }
@@ -1291,10 +1293,10 @@ img {
     aspect-ratio:16/11
   }
   .site-footer {
-    flex-direction:row;
+    flex-direction:column;
     align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap
+    justify-content:center;
+    text-align:center
   }
 }
 
@@ -1389,4 +1391,66 @@ img {
     animation:none!important;
     transition:none!important
   }
+}
+
+/* 08 — Vértice Mídia: identidade PNG, planos, pontos e indicador da dock. */
+.brand { white-space:nowrap; letter-spacing:-.055em; }
+.brand-logo { width:42px; height:42px; object-fit:contain; flex:none; }
+.brand-vertice { color:var(--ink); }
+:root[data-theme=dark] .brand-vertice { color:#fff; }
+.brand-midia { color:#2563eb; }
+:root[data-theme=dark] .brand-midia { color:#3b82f6; }
+.brand-name { display:inline-flex; align-items:center; gap:.24em; letter-spacing:-.04em; }
+.gallery-grid { grid-template-columns:1fr; }
+.gallery-media { aspect-ratio:16/10; }
+.plans-grid,.locations-grid { display:grid; grid-template-columns:1fr; gap:16px; }
+.plan-card,.location-card {
+  min-width:0; display:flex; flex-direction:column; gap:16px; padding:24px;
+  border:1px solid var(--line); border-radius:var(--radius); background:var(--card);
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+.plan-top,.location-top { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }
+.plan-card h3,.location-card h3 { font-size:25px; }
+.plan-price { font-family:var(--heading); font-weight:800; font-size:clamp(22px,2.2vw,30px); letter-spacing:-.05em; line-height:1.2; }
+.plan-description,.location-description { color:var(--muted); font-size:15px; }
+.plan-specs { display:grid; gap:10px; padding:16px 0; border-block:1px solid var(--line); font-weight:600; font-size:14px; }
+.plan-specs span,.location-spec,.location-note { display:flex; gap:10px; align-items:flex-start; }
+.plan-specs .icon,.location-spec .icon,.location-note .icon,.plan-benefits .icon { width:19px; height:19px; color:var(--accent); margin-top:2px; }
+.plan-benefits { display:grid; gap:12px; list-style:none; padding:0; margin:0 0 8px; font-size:14px; color:var(--muted); }
+.plan-benefits li { display:flex; gap:10px; align-items:flex-start; }
+.plan-card .button,.location-card .button { margin-top:auto; width:100%; justify-content:space-between; text-align:left; }
+.plan-featured { border:2px solid var(--accent); box-shadow:var(--shadow); background:var(--card); }
+.plan-badge,.location-tag { display:inline-flex; align-items:center; padding:6px 10px; border-radius:999px; font-size:11px; font-weight:700; color:var(--accent); background:var(--accent-soft); }
+.plan-badge { background:var(--nav); color:#fff; }
+.locations-section { background:var(--surface); border-block:1px solid var(--line); }
+.location-top .feature-icon { margin-bottom:0; }
+.location-spec { padding:13px 14px; border-radius:12px; background:var(--surface); font-size:14px; font-weight:600; }
+.location-note { color:var(--muted); font-size:12px; margin-bottom:5px; }
+.social-links { display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; }
+.social-link { display:grid; place-items:center; width:44px; height:44px; border:1px solid var(--line); border-radius:50%; color:var(--accent); background:var(--card); transition:background .2s,color .2s,border-color .2s; }
+.social-link[aria-disabled=true] { opacity:.5; cursor:default; }
+.social-link .icon { width:20px; height:20px; }
+.dock { isolation:isolate; touch-action:pan-y; user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; cursor:grab; }
+.dock-item { cursor:grab; -webkit-user-drag:none; }
+.dock .icon,.dock-item span { pointer-events:none; }
+.dock-slider { position:absolute; z-index:0; left:0; top:0; width:var(--slider-w,0px); height:var(--slider-h,0px); transform:translate3d(var(--slider-x,0px),var(--slider-y,0px),0); border-radius:9999px; background:#ffffff26; box-shadow:inset 0 0 0 1px #ffffff16; pointer-events:none; opacity:0; }
+.dock.slider-ready .dock-slider { opacity:1; transition:transform .35s cubic-bezier(.22,.8,.2,1),width .35s cubic-bezier(.22,.8,.2,1),height .35s cubic-bezier(.22,.8,.2,1); }
+.dock-item { position:relative; z-index:1; }
+.dock.slider-ready .dock-item.is-active { background:transparent; }
+/* Durante o gesto, a posição segue o ponteiro sem atraso de transição. */
+.dock.slider-ready.is-dragging .dock-slider { transition:none; }
+.dock.is-dragging,.dock.is-dragging .dock-item { cursor:grabbing; }
+.dock.is-dragging .dock-item { background:transparent; }
+@media (hover:hover) {
+  .plan-card:hover,.location-card:hover { transform:translateY(-4px); border-color:var(--accent); box-shadow:var(--shadow); }
+  .social-link[href]:hover { background:var(--nav); color:white; border-color:var(--nav); }
+}
+@media (max-width:360px) { .brand-logo { width:34px; height:34px; } .brand { font-size:17px; } .plan-card,.location-card { padding:20px; } }
+@media (min-width:560px) { .gallery-grid,.locations-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; } }
+@media (min-width:900px) { .plans-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; } .plan-card,.location-card { padding:28px; } .plan-featured { padding:27px; } .plan-description { min-height:3.2em; } .gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+/* V4 — marca em caixa alta sem comprometer os botões em telas estreitas. */
+@media (max-width:390px) {
+  .site-header .brand { font-size:clamp(13px,4vw,16px); gap:5px; }
+  .site-header .brand-logo { width:34px; height:34px; }
 }
