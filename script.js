@@ -3,8 +3,8 @@
 // CONFIGURAÇÃO: informe o número comercial real, com 55 + DDD + número,
 // somente dígitos. Não inclua +, espaços, traços ou parênteses.
 const CONFIG = Object.freeze({
-  whatsappNumber: '',
-  instagramUrl: '', // URL completa do perfil oficial
+  whatsappNumber: '5551996525053', // 55 + DDD + número, somente dígitos
+  instagramUrl: 'https://www.instagram.com/vertice_outdoor', // URL completa do perfil oficial
   linkedinUrl: '',  // URL completa da página oficial
   themeStorageKey: 'signage-theme'
 });
